@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect - Incubate & Accelerate Your Startup Idea</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-logo">
+          <a href="#" class="logo" data-route="home">
+            <i data-lucide="sparkles" class="logo-icon"></i>
+            <span class="logo-text">Connect</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <div class="nav-menu">
+            <div class="nav-item dropdown">
+              <button class="nav-link dropdown-trigger">Features</button>
+              <div class="dropdown-content">
+                <ul class="dropdown-grid">
+                  <li class="dropdown-feature">
+                    <a class="feature-card" data-route="idea-development">
+                      <div class="feature-title">AI-Powered Idea Development</div>
+                      <p class="feature-desc">Refine your startup concept with our advanced AI tools</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" data-route="team-building">
+                      <div class="item-title">Team Building</div>
+                      <p class="item-desc">Connect with like-minded individuals</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" data-route="mentorship">
+                      <div class="item-title">Mentorship</div>
+                      <p class="item-desc">Get guidance from industry experts</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" data-route="funding">
+                      <div class="item-title">Funding</div>
+                      <p class="item-desc">Present your ideas to potential investors</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a class="nav-link" data-route="explore">Explore</a>
+            <a class="nav-link" data-route="pricing">Pricing</a>
+          </div>
+          <div class="auth-buttons">
+            <button id="theme-toggle" class="theme-toggle">
+              <i data-lucide="sun" class="theme-icon theme-icon-sun"></i>
+              <i data-lucide="moon" class="theme-icon theme-icon-moon"></i>
+            </button>
+            <a class="btn btn-outline" data-route="login">Log In</a>
+            <a class="btn btn-primary" data-route="signup">Sign Up</a>
+          </div>
+        </nav>
+
+        <!-- Mobile Navigation Toggle -->
+        <div class="mobile-nav-toggle">
+          <button id="theme-toggle-mobile" class="theme-toggle">
+            <i data-lucide="sun" class="theme-icon theme-icon-sun"></i>
+            <i data-lucide="moon" class="theme-icon theme-icon-moon"></i>
+          </button>
+          <button id="menu-toggle" class="menu-button">
+            <i data-lucide="menu" class="menu-icon"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (Hidden by default) -->
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <a class="mobile-menu-item" data-route="explore">Explore</a>
+          <a class="mobile-menu-item" data-route="idea-development">Idea Development</a>
+          <a class="mobile-menu-item" data-route="team-building">Team Building</a>
+          <a class="mobile-menu-item" data-route="mentorship">Mentorship</a>
+          <a class="mobile-menu-item" data-route="funding">Funding</a>
+          <a class="mobile-menu-item" data-route="pricing">Pricing</a>
+          <div class="mobile-auth-buttons">
+            <a class="btn btn-outline btn-full" data-route="login">Log In</a>
+            <a class="btn btn-primary btn-full" data-route="signup">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pages Container -->
+    <div class="pages-container">
+      <!-- Home Page -->
+      <div id="home-page" class="page active">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-bg"></div>
+          <div class="hero-dots"></div>
+          <div class="hero-blob-1"></div>
+          <div class="hero-blob-2"></div>
+          
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                Turn Your <span class="hero-highlight">Startup Idea</span> Into Reality
+              </h1>
+              <p class="hero-description">
+                Develop, collaborate, fund, and launch your startup with our all-in-one platform for entrepreneurs.
+              </p>
+              <div class="hero-buttons">
+                <a class="btn btn-primary btn-full" data-route="dashboard">
+                  Get Started <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                </a>
+                <a class="btn btn-outline btn-full" data-route="explore">
+                  Explore Ideas
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hero-bottom-fade"></div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+          <div class="features-bg-dots"></div>
+          
+          <div class="container">
+            <div class="features-header">
+              <div class="features-badge">Our Platform</div>
+              <h2 class="features-title">How It Works</h2>
+              <p class="features-description">
+                Our platform guides you through every step of the startup journey
+              </p>
+            </div>
+            
+            <div class="features-grid">
+              <div class="feature-card-wrapper">
+                <div class="feature-card-home">
+                  <div class="feature-card-header">
+                    <div class="feature-card-icon-wrapper">
+                      <i data-lucide="lightbulb" class="feature-card-icon"></i>
+                    </div>
+                    <h3 class="feature-card-title">Develop Your Idea</h3>
+                  </div>
+                  <div class="feature-card-content">
+                    <p class="feature-card-description">
+                      Use AI assistance to refine your startup concept or get feedback from our community.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="feature-card-wrapper">
+                <div class="feature-card-home">
+                  <div class="feature-card-header">
+                    <div class="feature-card-icon-wrapper">
+                      <i data-lucide="users" class="feature-card-icon"></i>
+                    </div>
+                    <h3 class="feature-card-title">Build Your Team</h3>
+                  </div>
+                  <div class="feature-card-content">
+                    <p class="feature-card-description">
+                      Connect with like-minded individuals and form your dream team with our AI matching.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="feature-card-wrapper">
+                <div class="feature-card-home">
+                  <div class="feature-card-header">
+                    <div class="feature-card-icon-wrapper">
+                      <i data-lucide="briefcase" class="feature-card-icon"></i>
+                    </div>
+                    <h3 class="feature-card-title">Get Mentorship</h3>
+                  </div>
+                  <div class="feature-card-content">
+                    <p class="feature-card-description">
+                      Hire experienced mentors who can provide real-time guidance for your startup.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="feature-card-wrapper">
+                <div class="feature-card-home">
+                  <div class="feature-card-header">
+                    <div class="feature-card-icon-wrapper">
+                      <i data-lucide="dollar-sign" class="feature-card-icon"></i>
+                    </div>
+                    <h3 class="feature-card-title">Secure Funding</h3>
+                  </div>
+                  <div class="feature-card-content">
+                    <p class="feature-card-description">
+                      Present your idea to potential investors in our funding zone.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="feature-card-wrapper">
+                <div class="feature-card-home">
+                  <div class="feature-card-header">
+                    <div class="feature-card-icon-wrapper">
+                      <i data-lucide="code" class="feature-card-icon"></i>
+                    </div>
+                    <h3 class="feature-card-title">Implement Your Vision</h3>
+                  </div>
+                  <div class="feature-card-content">
+                    <p class="feature-card-description">
+                      Connect with freelancers who can turn your prototype into a real product.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="feature-card-wrapper">
+                <div class="feature-card-home">
+                  <div class="feature-card-header">
+                    <div class="feature-card-icon-wrapper">
+                      <i data-lucide="arrow-right" class="feature-card-icon"></i>
+                    </div>
+                    <h3 class="feature-card-title">Launch Your Startup</h3>
+                  </div>
+                  <div class="feature-card-content">
+                    <p class="feature-card-description">
+                      Take your startup from concept to market with our comprehensive support.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+          <div class="cta-bg"></div>
+          <div class="cta-blob-1"></div>
+          <div class="cta-blob-2"></div>
+          
+          <div class="container">
+            <div class="cta-content">
+              <h2 class="cta-title">
+                Ready to <span class="hero-highlight">Launch Your Startup</span>?
+              </h2>
+              <p class="cta-description">
+                Join thousands of entrepreneurs who are bringing their ideas to life.
+              </p>
+              <a class="btn btn-primary cta-button" data-route="signup">
+                Start Your Journey Today
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Dashboard Page -->
+      <div id="dashboard-page" class="page">
+        <div class="container dashboard-container">
+          <!-- Dashboard Header -->
+          <div class="dashboard-header">
+            <div>
+              <h1 class="page-title">Dashboard</h1>
+              <div class="quick-nav-buttons">
+                <a class="btn btn-primary" data-route="idea-development">
+                  <i data-lucide="lightbulb" class="btn-icon"></i> Ideas
+                </a>
+                <a class="btn btn-primary" data-route="team-building">
+                  <i data-lucide="users" class="btn-icon"></i> Teams
+                </a>
+                <a class="btn btn-primary" data-route="mentorship">
+                  <i data-lucide="briefcase" class="btn-icon"></i> Mentors
+                </a>
+                <a class="btn btn-primary" data-route="funding">
+                  <i data-lucide="dollar-sign" class="btn-icon"></i> Funding
+                </a>
+                <a class="btn btn-primary" data-route="freelancers">
+                  <i data-lucide="code" class="btn-icon"></i> Freelancing
+                </a>
+              </div>
+            </div>
+            <a class="btn btn-primary">
+              <i data-lucide="plus" class="btn-icon"></i> New Idea
+            </a>
+          </div>
+
+          <!-- Main Navigation Tabs -->
+          <div class="tab-buttons">
+            <button class="tab-button active" data-tab="ideas">
+              <i data-lucide="lightbulb" class="tab-icon"></i>
+              <span class="tab-label">Ideas</span>
+            </button>
+            <button class="tab-button" data-tab="teams">
+              <i data-lucide="users" class="tab-icon"></i>
+              <span class="tab-label">Teams</span>
+            </button>
+            <button class="tab-button" data-tab="mentors">
+              <i data-lucide="briefcase" class="tab-icon"></i>
+              <span class="tab-label">Mentors</span>
+            </button>
+            <button class="tab-button" data-tab="funding">
+              <i data-lucide="dollar-sign" class="tab-icon"></i>
+              <span class="tab-label">Funding</span>
+            </button>
+            <button class="tab-button" data-tab="freelancers">
+              <i data-lucide="code" class="tab-icon"></i>
+              <span class="tab-label">Freelancers</span>
+            </button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+            <!-- IDEAS TAB -->
+            <div class="tab-pane active" id="ideas-tab">
+              <div class="card-grid">
+                <!-- Featured Card -->
+                <div class="card card-hover">
+                  <div class="card-header">
+                    <span class="badge badge-primary">Featured</span>
+                    <h3 class="card-title">AI-Powered Idea Development</h3>
+                    <p class="card-description">Refine your startup concept with our AI tools</p>
+                  </div>
+                  <div class="card-content">
+                    <div class="feature-item">
+                      <i data-lucide="lightbulb" class="feature-icon"></i>
+                      <span>Get AI suggestions to improve your idea</span>
+                    </div>
+                    <div class="feature-item">
+                      <i data-lucide="users" class="feature-icon"></i>
+                      <span>Get feedback from the community</span>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <a class="btn btn-primary btn-full" data-route="idea-development">
+                      Develop Your Idea <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- My Ideas Card -->
+                <div class="card card-hover">
+                  <div class="card-header">
+                    <h3 class="card-title">My Ideas</h3>
+                    <p class="card-description">View and manage your startup ideas</p>
+                  </div>
+                  <div class="card-content">
+                    <p class="text-muted">You haven't created any ideas yet.</p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="btn btn-outline btn-full">
+                      <i data-lucide="plus" class="btn-icon"></i> Create New Idea
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Community Ideas Card -->
+                <div class="card card-hover">
+                  <div class="card-header">
+                    <h3 class="card-title">Community Ideas</h3>
+                    <p class="card-description">Explore ideas from the community</p>
+                  </div>
+                  <div class="card-content">
+                    <p class="text-muted">Discover trending ideas and provide feedback.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a class="btn btn-outline btn-full" data-route="explore">
+                      Explore Ideas
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TEAMS TAB (Hidden by default) -->
+            <div class="tab-pane" id="teams-tab">
+              <div class="grid-layout">
+                <div class="sidebar">
+                  <div class="card card-hover">
+                    <div class="card-header">
+                      <h3 class="card-title">Find Team Members</h3>
+                      <p class="card-description">Search for potential team members</p>
+                    </div>
+                    <div class="card-content">
+                      <div class="search-box">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search by name, role, or skill">
+                      </div>
+                      <div class="filter-section">
+                        <h4 class="filter-title">Popular Skills</h4>
+                        <div class="badge-container">
+                          <span class="badge badge-outline">React</span>
+                          <span class="badge badge-outline">Node.js</span>
+                          <span class="badge badge-outline">TypeScript</span>
+                          <span class="badge badge-outline">Product Strategy</span>
+                          <span class="badge badge-outline">UX/UI</span>
+                          <span class="badge badge-outline">Marketing</span>
+                        </div>
+                      </div>
+                      <button class="btn btn-outline btn-sm btn-full">
+                        <i data-lucide="filter" class="btn-icon"></i> More Filters
+                      </button>
+                    </div>
+                    <div class="card-footer">
+                      <a class="btn btn-primary btn-full" data-route="team-building">
+                        Advanced Search <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="main-content">
+                  <div class="section-header">
+                    <h2 class="section-title">AI-Matched Team Members</h2>
+                    <button class="btn btn-outline">
+                      <i data-lucide="user-plus" class="btn-icon"></i> Create Team
+                    </button>
+                  </div>
+                  
+                  <div class="team-members-grid" id="team-members-container">
+                    <!-- Team members will be loaded here via JavaScript -->
+                  </div>
+                  
+                  <div class="view-all-container">
+                    <a class="btn btn-outline" data-route="team-building">
+                      View All Team Members <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MENTORS TAB -->
+            <div class="tab-pane" id="mentors-tab">
+              <div class="grid-layout">
+                <div class="sidebar">
+                  <div class="card card-hover">
+                    <div class="card-header">
+                      <h3 class="card-title">Find Mentors</h3>
+                      <p class="card-description">Search for industry experts</p>
+                    </div>
+                    <div class="card-content">
+                      <div class="search-box">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search mentors">
+                      </div>
+                      <div class="filter-section">
+                        <h4 class="filter-title">Expertise</h4>
+                        <select class="form-select">
+                          <option value="">All Areas</option>
+                          <option value="Startup Strategy">Startup Strategy</option>
+                          <option value="Fundraising">Fundraising</option>
+                          <option value="Product Strategy">Product Strategy</option>
+                          <option value="Tech Leadership">Tech Leadership</option>
+                          <option value="Growth Marketing">Growth Marketing</option>
+                        </select>
+                      </div>
+                      <div class="filter-section">
+                        <h4 class="filter-title">Budget</h4>
+                        <select class="form-select">
+                          <option value="">Any Budget</option>
+                          <option value="low">Under $100/hr</option>
+                          <option value="mid">$100-$150/hr</option>
+                          <option value="high">$150-$200/hr</option>
+                          <option value="premium">$200+/hr</option>
+                        </select>
+                      </div>
+                      <button class="btn btn-outline btn-sm btn-full">
+                        <i data-lucide="filter" class="btn-icon"></i> More Filters
+                      </button>
+                    </div>
+                    <div class="card-footer">
+                      <a class="btn btn-primary btn-full" data-route="mentorship">
+                        View All Mentors <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="main-content">
+                  <div class="section-header">
+                    <h2 class="section-title">Top Mentors</h2>
+                    <button class="btn btn-outline">
+                      <i data-lucide="calendar" class="btn-icon"></i> Schedule Session
+                    </button>
+                  </div>
+                  
+                  <div class="team-members-grid" id="mentors-container">
+                    <!-- Mentors will be loaded here via JavaScript -->
+                  </div>
+                  
+                  <div class="view-all-container">
+                    <a class="btn btn-outline" data-route="mentorship">
+                      View All Mentors <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FUNDING TAB -->
+            <div class="tab-pane" id="funding-tab">
+              <div class="grid-layout">
+                <div class="sidebar">
+                  <div class="card card-hover">
+                    <div class="card-header">
+                      <h3 class="card-title">Find Investors</h3>
+                      <p class="card-description">Connect with potential investors</p>
+                    </div>
+                    <div class="card-content">
+                      <div class="search-box">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search investors">
+                      </div>
+                      <div class="filter-section">
+                        <h4 class="filter-title">Domain</h4>
+                        <select class="form-select">
+                          <option value="">All Domains</option>
+                          <option value="Technology">Technology</option>
+                          <option value="AI">AI</option>
+                          <option value="SaaS">SaaS</option>
+                          <option value="FinTech">FinTech</option>
+                          <option value="Healthcare">Healthcare</option>
+                          <option value="FoodTech">FoodTech</option>
+                        </select>
+                      </div>
+                      <div class="filter-section">
+                        <h4 class="filter-title">Investment Range</h4>
+                        <select class="form-select">
+                          <option value="">Any Amount</option>
+                          <option value="seed">Under $100K</option>
+                          <option value="early">$100K - $500K</option>
+                          <option value="mid">$500K - $2M</option>
+                          <option value="growth">$2M+</option>
+                        </select>
+                      </div>
+                      <button class="btn btn-outline btn-sm btn-full">
+                        <i data-lucide="filter" class="btn-icon"></i> More Filters
+                      </button>
+                    </div>
+                    <div class="card-footer">
+                      <a class="btn btn-primary btn-full" data-route="funding">
+                        View All Investors <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="main-content">
+                  <div class="section-header">
+                    <h2 class="section-title">AI-Matched Investors</h2>
+                    <button class="btn btn-outline">
+                      <i data-lucide="dollar-sign" class="btn-icon"></i> Create Funding Request
+                    </button>
+                  </div>
+                  
+                  <div class="team-members-grid" id="investors-container">
+                    <!-- Investors will be loaded here via JavaScript -->
+                  </div>
+                  
+                  <div class="view-all-container">
+                    <a class="btn btn-outline" data-route="funding">
+                      View All Investors <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FREELANCERS TAB -->
+            <div class="tab-pane" id="freelancers-tab">
+              <div class="grid-layout">
+                <div class="sidebar">
+                  <div class="card card-hover">
+                    <div class="card-header">
+                      <h3 class="card-title">Find Freelancers</h3>
+                      <p class="card-description">Hire skilled professionals</p>
+                    </div>
+                    <div class="card-content">
+                      <div class="search-box">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search freelancers">
+                      </div>
+                      <div class="filter-section">
+                        <h4 class="filter-title">Category</h4>
+                        <select class="form-select">
+                          <option value="">All Categories</option>
+                          <option value="Development">Development</option>
+                          <option value="Design">Design</option>
+                          <option value="Marketing">Marketing</option>
+                          <option value="Content">Content Creation</option>
+                        </select>
+                      </div>
+                      <div class="filter-section">
+                        <h4 class="filter-title">Budget</h4>
+                        <select class="form-select">
+                          <option value="">Any Budget</option>
+                          <option value="low">Under $30/hr</option>
+                          <option value="mid">$30-$60/hr</option>
+                          <option value="high">$60-$100/hr</option>
+                          <option value="premium">$100+/hr</option>
+                        </select>
+                      </div>
+                      <button class="btn btn-outline btn-sm btn-full">
+                        <i data-lucide="filter" class="btn-icon"></i> More Filters
+                      </button>
+                    </div>
+                    <div class="card-footer">
+                      <a class="btn btn-primary btn-full" data-route="freelancers">
+                        View All Freelancers <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="main-content">
+                  <div class="section-header">
+                    <h2 class="section-title">Top Freelancers</h2>
+                    <button class="btn btn-outline">
+                      <i data-lucide="briefcase" class="btn-icon"></i> Post a Project
+                    </button>
+                  </div>
+                  
+                  <div class="team-members-grid" id="freelancers-container">
+                    <!-- Freelancers will be loaded here via JavaScript -->
+                  </div>
+                  
+                  <div class="view-all-container">
+                    <a class="btn btn-outline" data-route="freelancers">
+                      View All Freelancers <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Idea Development Page -->
+      <div id="idea-development-page" class="page">
+        <div class="container py-8">
+          <div class="dashboard-header">
+            <div>
+              <h1 class="page-title">Idea Development</h1>
+              <p class="text-muted">Refine your startup concept with AI assistance and community feedback.</p>
+            </div>
+            <div class="flex gap-2">
+              <button class="btn btn-outline">
+                <i data-lucide="save" class="btn-icon"></i> Save Draft
+              </button>
+              <button class="btn btn-primary">
+                <i data-lucide="share" class="btn-icon"></i> Share for Feedback
+              </button>
+            </div>
+          </div>
+
+          <div class="grid-layout">
+            <div class="lg:col-span-2">
+              <div class="card card-hover">
+                <div class="card-header">
+                  <h3 class="card-title">Develop Your Idea</h3>
+                  <p class="card-description">Describe your startup idea in detail</p>
+                </div>
+                <div class="card-content">
+                  <div class="idea-form">
+                    <div class="form-group">
+                      <label class="form-label" for="title">Idea Title</label>
+                      <input id="title" class="form-input" placeholder="Give your idea a catchy title">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="domain">Domain</label>
+                      <select id="domain" class="form-select">
+                        <option value="">Select a domain</option>
+                        <option value="tech">Technology</option>
+                        <option value="health">Healthcare</option>
+                        <option value="finance">Finance</option>
+                        <option value="education">Education</option>
+                        <option value="ecommerce">E-Commerce</option>
+                        <option value="food">Food & Beverage</option>
+                        <option value="travel">Travel</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="description">Description</label>
+                      <textarea id="description" class="form-textarea" placeholder="Describe your startup idea in detail..."></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="problem">Problem Statement</label>
+                      <textarea id="problem" class="form-textarea" placeholder="What problem does your startup solve?"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="solution">Solution</label>
+                      <textarea id="solution" class="form-textarea" placeholder="How does your startup solve this problem?"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="target">Target Market</label>
+                      <textarea id="target" class="form-textarea" placeholder="Who is your target audience?"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="flex justify-between">
+                    <button class="btn btn-outline">Clear</button>
+                    <button id="generate-ai-btn" class="btn btn-primary">
+                      <i data-lucide="sparkles" class="btn-icon"></i> Get AI Suggestions
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="card card-hover">
+                <div class="card-header">
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="lightbulb" class="feature-icon"></i>
+                    <h3 class="card-title">AI Suggestions</h3>
+                  </div>
+                  <p class="card-description">Get AI-powered suggestions to improve your idea</p>
+                </div>
+                <div class="card-content">
+                  <div id="ai-suggestions-container" class="ai-suggestions">
+                    <div class="text-center py-8 text-muted">
+                      <i data-lucide="lightbulb" style="width: 3rem; height: 3rem; margin: 0 auto 1rem; opacity: 0.2;"></i>
+                      <p>Describe your idea and click "Get AI Suggestions" to receive feedback.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button id="apply-suggestions-btn" class="btn btn-outline btn-full" disabled>
+                    Apply Suggestions
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Building Page -->
+      <div id="team-building-page" class="page">
+        <div class="container py-8">
+          <div class="dashboard-header">
+            <div>
+              <h1 class="page-title">Team Building</h1>
+              <p class="text-muted">Find the perfect team members for your startup.</p>
+            </div>
+            <button class="btn btn-primary">
+              <i data-lucide="users" class="btn-icon"></i> Create Team
+            </button>
+          </div>
+
+          <div class="team-tabs">
+            <div class="team-tab active" data-team-tab="find">Find Team Members</div>
+            <div class="team-tab" data-team-tab="teams">My Teams</div>
+            <div class="team-tab" data-team-tab="invites">Invitations</div>
+          </div>
+
+          <div class="team-tab-content active" id="find-tab">
+            <div class="grid-layout">
+              <div class="sidebar">
+                <div class="card card-hover">
+                  <div class="card-header">
+                    <h3 class="card-title">Filters</h3>
+                    <p class="card-description">Refine your search</p>
+                  </div>
+                  <div class="card-content">
+                    <div class="search-box">
+                      <i data-lucide="search" class="search-icon"></i>
+                      <input type="text" class="search-input" placeholder="Search by name, role, or skill">
+                    </div>
+                    <div class="filter-section">
+                      <h4 class="filter-title">Popular Skills</h4>
+                      <div class="badge-container">
+                        <span class="badge badge-outline">React</span>
+                        <span class="badge badge-outline">Node.js</span>
+                        <span class="badge badge-outline">TypeScript</span>
+                        <span class="badge badge-outline">Product Strategy</span>
+                        <span class="badge badge-outline">UX/UI</span>
+                        <span class="badge badge-outline">Marketing</span>
+                      </div>
+                    </div>
+                    <button class="btn btn-outline btn-sm btn-full">
+                      <i data-lucide="filter" class="btn-icon"></i> More Filters
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-content">
+                <h2 class="section-title">AI-Matched Team Members</h2>
+                <div class="team-members-grid" id="team-building-members">
+                  <!-- Team members will be loaded here via JavaScript -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-tab-content" id="teams-tab">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">My Teams</h3>
+                <p class="card-description">Teams you've created or joined</p>
+              </div>
+              <div class="card-content">
+                <div class="text-center py-12">
+                  <i data-lucide="users" style="width: 3rem; height: 3rem; margin: 0 auto 1rem; opacity: 0.2;"></i>
+                  <h3 style="font-size: 1.125rem; font-weight: 500; margin-bottom: 0.5rem;">No Teams Yet</h3>
+                  <p class="text-muted" style="margin-bottom: 1rem;">You haven't created or joined any teams yet.</p>
+                  <button class="btn btn-primary">
+                    <i data-lucide="users" class="btn-icon"></i> Create Your First Team
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-tab-content" id="invites-tab">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Team Invitations</h3>
+                <p class="card-description">Invitations to join teams</p>
+              </div>
+              <div class="card-content">
+                <div class="text-center py-12">
+                  <i data-lucide="message-square" style="width: 3rem; height: 3rem; margin: 0 auto 1rem; opacity: 0.2;"></i>
+                  <h3 style="font-size: 1.125rem; font-weight: 500; margin-bottom: 0.5rem;">No Invitations</h3>
+                  <p class="text-muted">You don't have any pending team invitations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mentorship Page -->
+      <div id="mentorship-page" class="page">
+        <div class="container py-8">
+          <div class="dashboard-header">
+            <div>
+              <h1 class="page-title">Mentorship</h1>
+              <p class="text-muted">Get guidance from experienced industry experts.</p>
+            </div>
+            <button class="btn btn-primary">
+              <i data-lucide="calendar" class="btn-icon"></i> Schedule Session
+            </button>
+          </div>
+
+          <div class="team-tabs">
+            <div class="team-tab active" data-mentor-tab="find">Find Mentors</div>
+            <div class="team-tab" data-mentor-tab="my-mentors">My Mentors</div>
+            <div class="team-tab" data-mentor-tab="sessions">Upcoming Sessions</div>
+          </div>
+
+          <div class="team-tab-content active" id="find-mentors-tab">
+            <div class="grid-layout">
+              <div class="sidebar">
+                <div class="card card-hover">
+                  <div class="card-header">
+                    <h3 class="card-title">Filters</h3>
+                    <p class="card-description">Refine your search</p>
+                  </div>
+                  <div class="card-content">
+                    <div class="search-box">
+                      <i data-lucide="search" class="search-icon"></i>
+                      <input type="text" class="search-input" placeholder="Search mentors">
+                    </div>
+                    <div class="filter-section">
+                      <h4 class="filter-title">Expertise</h4>
+                      <select class="form-select">
+                        <option value="">All Areas</option>
+                        <option value="Startup Strategy">Startup Strategy</option>
+                        <option value="Fundraising">Fundraising</option>
+                        <option value="Product Strategy">Product Strategy</option>
+                        <option value="Tech Leadership">Tech Leadership</option>
+                        <option value="Growth Marketing">Growth Marketing</option>
+                      </select>
+                    </div>
+                    <div class="filter-section">
+                      <h4 class="filter-title">Budget</h4>
+                      <select class="form-select">
+                        <option value="">Any Budget</option>
+                        <option value="low">Under $100/hr</option>
+                        <option value="mid">$100-$150/hr</option>
+                        <option value="high">$150-$200/hr</option>
+                        <option value="premium">$200+/hr</option>
+                      </select>
+                    </div>
+                    <button class="btn btn-outline btn-sm btn-full">
+                      <i data-lucide="filter" class="btn-icon"></i> More Filters
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-content">
+                <h2 class="section-title">Top Mentors</h2>
+                <div id="mentorship-mentors">
+                  <!-- Mentors will be loaded here via JavaScript -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-tab-content" id="my-mentors-tab">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">My Mentors</h3>
+                <p class="card-description">Mentors you've hired</p>
+              </div>
+              <div class="card-content">
+                <div class="text-center py-12">
+                  <i data-lucide="briefcase" style="width: 3rem; height: 3rem; margin: 0 auto 1rem; opacity: 0.2;"></i>
+                  <h3 style="font-size: 1.125rem; font-weight: 500; margin-bottom: 0.5rem;">No Mentors Yet</h3>
+                  <p class="text-muted" style="margin-bottom: 1rem;">You haven't hired any mentors yet.</p>
+                  <button class="btn btn-primary">
+                    <i data-lucide="briefcase" class="btn-icon"></i> Find Your First Mentor
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-tab-content" id="sessions-tab">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Upcoming Sessions</h3>
+                <p class="card-description">Your scheduled mentorship sessions</p>
+              </div>
+              <div class="card-content">
+                <div class="text-center py-12">
+                  <i data-lucide="calendar" style="width: 3rem; height: 3rem; margin: 0 auto 1rem; opacity: 0.2;"></i>
+                  <h3 style="font-size: 1.125rem; font-weight: 500; margin-bottom: 0.5rem;">No Upcoming Sessions</h3>
+                  <p class="text-muted">You don't have any scheduled mentorship sessions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Funding Page -->
+      <div id="funding-page" class="page">
+        <div class="container py-8">
+          <div class="dashboard-header">
+            <div>
+              <h1 class="page-title">Funding Zone</h1>
+              <p class="text-muted">Connect with investors and secure funding for your startup.</p>
+            </div>
+            <button class="btn btn-primary">
+              <i data-lucide="dollar-sign" class="btn-icon"></i> Create Funding Request
+            </button>
+          </div>
+
+          <div class="team-tabs">
+            <div class="team-tab active" data-funding-tab="investors">Find Investors</div>
+            <div class="team-tab" data-funding-tab="requests">My Funding Requests</div>
+            <div class="team-tab" data-funding-tab="interests">Investor Interests</div>
+          </div>
+
+          <div class="team-tab-content active" id="investors-tab">
+            <div class="grid-layout">
+              <div class="sidebar">
+                <div class="card card-hover">
+                  <div class="card-header">
+                    <h3 class="card-title">Filters</h3>
+                    <p class="card-description">Refine your search</p>
+                  </div>
+                  <div class="card-content">
+                    <div class="search-box">
+                      <i data-lucide="search" class="search-icon"></i>
+                      <input type="text" class="search-input" placeholder="Search investors">
+                    </div>
+                    <div class="filter-section">
+                      <h4 class="filter-title">Domain</h4>
+                      <select class="form-select">
+                        <option value="">All Domains</option>
+                        <option value="Technology">Technology</option>
+                        <option value="AI">AI</option>
+                        <option value="SaaS">SaaS</option>
+                        <option value="FinTech">FinTech</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="FoodTech">FoodTech</option>
+                      </select>
+                    </div>
+                    <div class="filter-section">
+                      <h4 class="filter-title">Investment Range</h4>
+                      <select class="form-select">
+                        <option value="">Any Amount</option>
+                        <option value="seed">Under $100K</option>
+                        <option value="early">$100K - $500K</option>
+                        <option value="mid">$500K - $2M</option>
+                        <option value="growth">$2M+</option>
+                      </select>
+                    </div>
+                    <button class="btn btn-outline btn-sm btn-full">
+                      <i data-lucide="filter" class="btn-icon"></i> More Filters
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-content">
+                <h2 class="section-title">AI-Matched Investors</h2>
+                <div id="funding-investors">
+                  <!-- Investors will be loaded here via JavaScript -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-tab-content" id="requests-tab">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">My Funding Requests</h3>
+                <p class="card-description">Track and manage your funding requests</p>
+              </div>
+              <div class="card-content">
+                <div class="text-center py-12">
+                  <i data-lucide="dollar-sign" style="width: 3rem; height: 3rem; margin: 0 auto 1rem; opacity: 0.2;"></i>
+                  <h3 style="font-size: 1.125rem; font-weight: 500; margin-bottom: 0.5rem;">No Funding Requests</h3>
+                  <p class="text-muted" style="margin-bottom: 1rem;">You haven't created any funding requests yet.</p>
+                  <button class="btn btn-primary">
+                    <i data-lucide="dollar-sign" class="btn-icon"></i> Create Your First Funding Request
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-tab-content" id="interests-tab">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Investor Interests</h3>
+                <p class="card-description">Investors interested in your startup</p>
+              </div>
+              <div class="card-content">
+                <div class="text-center py-12">
+                  <i data-lucide="star" style="width: 3rem; height: 3rem; margin: 0 auto 1rem; opacity: 0.2;"></i>
+                  <h3 style="font-size: 1.125rem; font-weight: 500; margin-bottom: 0.5rem;">No Investor Interests</h3>
+                  <p class="text-muted">No investors have shown interest in your startup yet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Freelancers Page -->
+      <div id="freelancers-page" class="page">
+        <div class="container py-8">
+          <div class="dashboard-header">
+            <div>
+              <h1 class="page-title">Freelancer Marketplace</h1>
+              <p class="text-muted">Find skilled professionals to bring your startup to life.</p>
+            </div>
+            <button class="btn btn-primary">
+              <i data-lucide="briefcase" class="btn-icon"></i> Post a Project
+            </button>
+          </div>
+
+          <div class="team-tabs">
+            <div class="team-tab active" data-freelancer-tab="find">Find Freelancers</div>
+            <div class="team-tab" data-freelancer-tab="projects">My Projects</div>
+            <div class="team-tab" data-freelancer-tab="proposals">Project Proposals</div>
+          </div>
+
+          <div class="team-tab-content active" id="find-freelancers-tab">
+            <div class="grid-layout">
+              <div class="sidebar">
+                <div class="card card-hover">
+                  <div class="card-header">
+                    <h3 class="card-title">Filters</h3>
+                    <p class="card-description">Refine your search</p>
+                  </div>
+                  <div class="card-content">
+                    <div class="search-box">
+                      <i data-lucide="search" class="search-icon"></i>
+                      <input type="text" class="search-input" placeholder="Search freelancers">
+                    </div>
+                    <div class="filter-section">
+                      <h4 class="filter-title">Category</h4>
+                      <select class="form-select">
+                        <option value="">All Categories</option>
+                        <option value="Development">Development</option>
+                        <option value="Design">Design</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Content">Content Creation</option>
+                      </select>
+                    </div>
+                    <div class="filter-section">
+                      <h4 class="filter-title">Budget</h4>
+                      <select class="form-select">
+                        <option value="">Any Budget</option>
+                        <option value="low">Under $30/hr</option>
+                        <option value="mid">$30-$60/hr</option>
+                        <option value="high">$60-$100/hr</option>
+                        <option value="premium">$100+/hr</option>
+                      </select>
+                    </div>
+                    <button class="btn btn-outline btn-sm btn-full">
+                      <i data-lucide="filter" class="btn-icon"></i> More Filters
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-content">
+                <h2 class="section-title">Top Freelancers</h2>
+                <div id="freelancers-list">
+                  <!-- Freelancers will be loaded here via JavaScript -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-tab-content" id="projects-tab">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">My Projects</h3>
+                <p class="card-description">Track and manage your freelance projects</p>
+              </div>
+              <div class="card-content">
+                <div class="text-center py-12">
+                  <i data-lucide="code" style="width: 3rem; height: 3rem; margin: 0 auto 1rem; opacity: 0.2;"></i>
+                  <h3 style="font-size: 1.125rem; font-weight: 500; margin-bottom: 0.5rem;">No Projects</h3>
+                  <p class="text-muted" style="margin-bottom: 1rem;">You haven't created any projects yet.</p>
+                  <button class="btn btn-primary">
+                    <i data-lucide="briefcase" class="btn-icon"></i> Post Your First Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-tab-content" id="proposals-tab">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Project Proposals</h3>
+                <p class="card-description">Proposals from freelancers for your projects</p>
+              </div>
+              <div class="card-content">
+                <div class="text-center py-12">
+                  <i data-lucide="message-square" style="width: 3rem; height: 3rem; margin: 0 auto 1rem; opacity: 0.2;"></i>
+                  <h3 style="font-size: 1.125rem; font-weight: 500; margin-bottom: 0.5rem;">No Proposals</h3>
+                  <p class="text-muted">You don't have any project proposals yet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Page -->
+      <div id="pricing-page" class="page">
+        <div class="container py-8">
+          <div class="pricing-header">
+            <h1 class="pricing-title">Choose the Right Plan for Your Journey</h1>
+            <p class="pricing-description">
+              Select a plan that fits your needs and helps you accelerate your startup growth.
+            </p>
+            
+            <div class="pricing-toggle">
+              <span class="pricing-toggle-label">Monthly</span>
+              <div id="billing-toggle" class="pricing-toggle-button">
+                <div class="pricing-toggle-slider"></div>
+              </div>
+              <span class="pricing-toggle-label">Annually <span style="color: var(--primary);">Save 20%</span></span>
+            </div>
+          </div>
+          
+          <div class="pricing-grid">
+            <!-- Free Plan -->
+            <div class="pricing-card">
+              <div class="pricing-card-header">
+                <h3 class="pricing-card-title">Free</h3>
+                <div class="pricing-card-price">
+                  <span class="pricing-card-price-currency">$</span>0
+                  <span class="pricing-card-price-period">/month</span>
+                </div>
+                <p class="pricing-card-description">Perfect for exploring the platform</p>
+              </div>
+              <div class="pricing-card-content">
+                <ul class="pricing-card-features">
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Create up to 3 startup ideas</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Basic AI assistance (5 requests/month)</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Community feedback</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Limited team building features</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Browse mentors and investors</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="pricing-card-footer">
+                <button class="btn btn-outline btn-full">Get Started</button>
+              </div>
+            </div>
+            
+            <!-- Pro Plan -->
+            <div class="pricing-card pricing-card-popular">
+              <div class="pricing-card-header">
+                <h3 class="pricing-card-title">Pro</h3>
+                <div class="pricing-card-price" id="pro-price">
+                  <span class="pricing-card-price-currency">$</span>29
+                  <span class="pricing-card-price-period">/month</span>
+                </div>
+                <p class="pricing-card-description">For serious entrepreneurs</p>
+              </div>
+              <div class="pricing-card-content">
+                <ul class="pricing-card-features">
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Unlimited startup ideas</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Advanced AI assistance (100 requests/month)</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Priority community feedback</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Full team building features</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Connect with mentors and investors</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Create funding requests</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Post up to 5 freelance projects</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="pricing-card-footer">
+                <button class="btn btn-primary btn-full">Subscribe Now</button>
+              </div>
+            </div>
+            
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+              <div class="pricing-card-header">
+                <h3 class="pricing-card-title">Enterprise</h3>
+                <div class="pricing-card-price" id="enterprise-price">
+                  <span class="pricing-card-price-currency">$</span>99
+                  <span class="pricing-card-price-period">/month</span>
+                </div>
+                <p class="pricing-card-description">For growing startups</p>
+              </div>
+              <div class="pricing-card-content">
+                <ul class="pricing-card-features">
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Everything in Pro</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Unlimited AI assistance</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Featured placement for funding requests</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Unlimited freelance projects</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Dedicated account manager</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Priority investor matching</span>
+                  </li>
+                  <li class="pricing-card-feature">
+                    <i data-lucide="check" class="pricing-card-feature-icon"></i>
+                    <span>Custom branding options</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="pricing-card-footer">
+                <button class="btn btn-outline btn-full">Contact Sales</button>
+              </div>
+            </div>
+          </div>
+          
+          <div style="text-align: center; margin-top: 3rem;">
+            <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Need a custom solution?</h3>
+            <p style="color: var(--muted-foreground); max-width: 36rem; margin: 0 auto 1.5rem;">
+              We offer tailored plans for accelerators, incubators, and educational institutions.
+            </p>
+            <button class="btn btn-outline">Contact Our Team</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Login Page -->
+      <div id="login-page" class="page">
+        <div class="auth-container">
+          <div class="auth-background"></div>
+          <div class="auth-background-2"></div>
+          
+          <div class="auth-card">
+            <div class="card card-hover">
+              <div class="card-header">
+                <div class="auth-icon-container">
+                  <div class="auth-icon-wrapper">
+                    <i data-lucide="sparkles" class="auth-icon"></i>
+                  </div>
+                </div>
+                <h3 class="auth-title">Log In</h3>
+                <p class="auth-description">Log in to your Connect account to continue your startup journey.</p>
+              </div>
+              <div class="card-content">
+                <form id="login-form">
+                  <div class="form-group">
+                    <label class="form-label" for="login-email">Email</label>
+                    <input id="login-email" type="email" class="form-input" placeholder="Enter your email" required>
+                  </div>
+                  <div class="form-group">
+                    <div class="flex justify-between">
+                      <label class="form-label" for="login-password">Password</label>
+                      <a class="auth-link" data-route="forgot-password">Forgot password?</a>
+                    </div>
+                    <input id="login-password" type="password" class="form-input" placeholder="Enter your password" required>
+                  </div>
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer">
+                <button id="login-button" class="btn btn-primary btn-full">
+                  Log In
+                </button>
+                <div class="auth-footer">
+                  Don't have an account? <a class="auth-link" data-route="signup">Sign up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signup Page -->
+      <div id="signup-page" class="page">
+        <div class="auth-container">
+          <div class="auth-background"></div>
+          <div class="auth-background-2"></div>
+          
+          <div class="auth-card">
+            <div class="card card-hover">
+              <div class="card-header">
+                <div class="auth-icon-container">
+                  <div class="auth-icon-wrapper">
+                    <i data-lucide="sparkles" class="auth-icon"></i>
+                  </div>
+                </div>
+                <h3 class="auth-title">Create an Account</h3>
+                <p class="auth-description">Join Connect to develop, collaborate, and fund your startup idea.</p>
+                <div class="auth-steps">
+                  <div class="auth-step active" data-step="1"></div>
+                  <div class="auth-step" data-step="2"></div>
+                </div>
+              </div>
+              <div class="card-content">
+                <form id="signup-form">
+                  <div id="signup-step-1">
+                    <div class="form-group">
+                      <label class="form-label" for="signup-name">Full Name</label>
+                      <input id="signup-name" type="text" class="form-input" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="signup-email">Email</label>
+                      <input id="signup-email" type="email" class="form-input" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="signup-password">Password</label>
+                      <input id="signup-password" type="password" class="form-input" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="signup-confirm-password">Confirm Password</label>
+                      <input id="signup-confirm-password" type="password" class="form-input" placeholder="Confirm your password" required>
+                    </div>
+                  </div>
+                  
+                  <div id="signup-step-2" style="display: none;">
+                    <div class="form-group">
+                      <label class="form-label" for="signup-role">Your Role</label>
+                      <select id="signup-role" class="form-select" required>
+                        <option value="">Select your role</option>
+                        <option value="founder">Founder</option>
+                        <option value="developer">Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="marketer">Marketer</option>
+                        <option value="product-manager">Product Manager</option>
+                        <option value="investor">Investor</option>
+                        <option value="mentor">Mentor</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="signup-interests">Areas of Interest</label>
+                      <select id="signup-interests" class="form-select" required>
+                        <option value="">Select your interests</option>
+                        <option value="tech">Technology</option>
+                        <option value="health">Healthcare</option>
+                        <option value="finance">Finance</option>
+                        <option value="education">Education</option>
+                        <option value="ecommerce">E-Commerce</option>
+                        <option value="sustainability">Sustainability</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="signup-experience">Experience Level</label>
+                      <select id="signup-experience" class="form-select" required>
+                        <option value="">Select your experience level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="expert">Expert</option>
+                      </select>
+                    </div>
+                    <div class="form-checkbox">
+                      <input type="checkbox" id="terms" required>
+                      <label for="terms">
+                        I agree to the <a class="auth-link" data-route="terms">terms of service</a> and <a class="auth-link" data-route="privacy">privacy policy</a>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer">
+                <div class="form-footer">
+                  <button id="signup-prev-btn" class="btn btn-outline" style="display: none;">
+                    <i data-lucide="arrow-left" class="btn-icon"></i> Back
+                  </button>
+                  <button id="signup-next-btn" class="btn btn-primary">
+                    Next <i data-lucide="arrow-right" class="btn-icon-right"></i>
+                  </button>
+                  <button id="signup-submit-btn" class="btn btn-primary" style="display: none;">
+                    Create Account
+                  </button>
+                </div>
+                <div class="auth-footer">
+                  Already have an account? <a class="auth-link" data-route="login">Log in</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other pages would be added here -->
+      <div id="explore-page" class="page">
+        <div class="container py-8">
+          <h1 class="page-title">Explore Ideas</h1>
+          <p class="text-muted">Discover and explore startup ideas from the community.</p>
+          <!-- Explore content would go here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="logo" data-route="home">
+              <i data-lucide="sparkles" class="logo-icon"></i>
+              <span class="logo-text">Connect</span>
+            </a>
+            <p class="footer-tagline">Turning innovative ideas into successful startups.</p>
+          </div>
+          
+          <div class="footer-links">
+            <h3 class="footer-heading">Platform</h3>
+            <ul class="footer-menu">
+              <li><a data-route="idea-development">Idea Development</a></li>
+              <li><a data-route="team-building">Team Building</a></li>
+              <li><a data-route="mentorship">Mentorship</a></li>
+              <li><a data-route="funding">Funding</a></li>
+              <li><a data-route="freelancers">Freelancers</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-links">
+            <h3 class="footer-heading">Company</h3>
+            <ul class="footer-menu">
+              <li><a data-route="about">About Us</a></li>
+              <li><a data-route="blog">Blog</a></li>
+              <li><a data-route="careers">Careers</a></li>
+              <li><a data-route="contact">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-links">
+            <h3 class="footer-heading">Legal</h3>
+            <ul class="footer-menu">
+              <li><a data-route="terms">Terms of Service</a></li>
+              <li><a data-route="privacy">Privacy Policy</a></li>
+              <li><a data-route="cookies">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p class="copyright">© <span id="current-year"></span> Connect. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
