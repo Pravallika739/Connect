@@ -1,2 +1,2 @@
 # Connect
-Startup Incubator and Accelerator App
+Startup Incubator and Accelerator App for aspiring entreprenuers
